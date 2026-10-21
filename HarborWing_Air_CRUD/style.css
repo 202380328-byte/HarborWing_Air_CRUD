@@ -1,0 +1,253 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    color: #243247;
+    line-height: 1.5;
+}
+
+header {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+}
+
+header h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    color: #dce8f5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px;
+    background: #1e4d7a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #2d679c;
+}
+
+main {
+    width: min(1200px, 94%);
+    margin: 26px auto;
+}
+
+h2 {
+    color: #12345a;
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 0;
+    color: #173d66;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #dbe3ec;
+    border-radius: 9px;
+    padding: 20px;
+    margin: 18px 0;
+    box-shadow: 0 2px 7px rgba(20, 40, 65, 0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid #bdc9d7;
+    border-radius: 5px;
+    font: inherit;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8dbbe8;
+    border-color: #2b6da8;
+}
+
+button,
+.cancel-button,
+.actions a {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding: 9px 13px;
+    background: #1d5e96;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+}
+
+button:hover,
+.cancel-button:hover,
+.actions a:hover {
+    background: #164673;
+}
+
+.cancel-button {
+    background: #68788a;
+}
+
+.cancel-button:hover {
+    background: #4c5a69;
+}
+
+.delete-button {
+    background: #b52e3a;
+}
+
+.delete-button:hover {
+    background: #8e202b;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 180px;
+}
+
+.success {
+    padding: 12px 14px;
+    border: 1px solid #a5d6b0;
+    border-radius: 5px;
+    background: #e8f7eb;
+    color: #205c2e;
+}
+
+.error {
+    padding: 12px 14px;
+    border: 1px solid #edb5b5;
+    border-radius: 5px;
+    background: #fff0f0;
+    color: #8b2020;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 11px 12px;
+    border-bottom: 1px solid #e0e6ed;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e9f0f7;
+    color: #173d66;
+    white-space: nowrap;
+}
+
+tbody tr:hover {
+    background: #f5f9fd;
+}
+
+.actions {
+    min-width: 190px;
+}
+
+.actions form {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.actions a {
+    margin: 3px 2px 3px 0;
+}
+
+.actions button {
+    margin: 3px 0;
+}
+
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.inline-form select {
+    flex: 1;
+    min-width: 220px;
+}
+
+footer {
+    text-align: center;
+    color: #657487;
+    padding: 22px 12px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .panel {
+        padding: 14px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+}
+```
